@@ -10,7 +10,21 @@
     <link rel="manifest" href="/manifest.json"/>
 
     <script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
-   
+    
+    <script>
+const PATH = '/service-worker.js';
+
+let isServiceWorkersSupport = ('serviceWorker' in navigator);
+
+if (isServiceWorkersSupport) {
+    console.log('Will service worker register?');
+    navigator.serviceWorker.register(PATH).then(function () {
+        console.log("Yes it did.");
+    }).catch(function (err) {
+        console.log("No it didn't. This happened: ", err)
+    });
+}
+</script>
     
     <script>
     function toggleLight() {
