@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DANCE@HOME Solo Cup</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Festiwal taneczny online">
+    <meta name="theme-color" content="#343232"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="manifest" href="/manifest.json"/>
+
+    <script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
+   
+    
+    <script>
+    function toggleLight() {
+  var element = document.body;
+  element.classList.toggle("light-mode");
+}</script>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap');
+        html {
+            height: 100%;
+        }
+body {
+  background-color: #4d4d4d;
+  width: 100%; 
+  height: 100%;
+  margin: auto;    
+     } 
+        .light-mode {
+            background-color: #7d7d7d;
+        }
+        
+        
+        h2 {
+            font-family: 'Roboto Bold', sans-serif;
+            color: whitesmoke;
+            text-align: center;
+        }
+        h1 {
+            font-family: 'Roboto Black', sans-serif;
+            color: whitesmoke;
+            text-align: center;
+        }
+        p {
+            font-family: 'Roboto', sans-serif;
+            color: white;
+            text-align: center;
+            font-size: 16px;
+        }
+
+
+.topnav {
+  position: relative;
+  background-color: #343232;
+  overflow: hidden;
+  padding: 20px 10px;
+ 
+  
+}
+
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 24px;
+  text-decoration: none;
+  font-size: 24px;
+  line-height: 25px;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 4px;    
+}
+
+
+.topnav a:hover:not(.logo) {
+  background-color: #5ce1e6;
+  color: white;
+}
+
+.topnav a.active {
+  background-color: #f0e345;
+  color: white;
+}
+
+.topnav-centered a {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.topnav-right {
+  float: right;
+}
+        
+.hr hr {
+  border: 2px solid #5ce1e6;
+}        
+.hr h2 {
+            font-family: 'Roboto Black', sans-serif;
+            color: white;
+            font-size: 36px;
+            text-align: center;
+        }
+
+        .photo_round {
+            width: 100%;
+            margin-left: 4.5%;
+        }
+        .photo_round img {
+            border-radius: 50%;
+            width: 40%;
+            height: auto;
+        }
+        figcaption {
+            font-family: 'Roboto', sans-serif;
+            color: white;
+            font-size: 18px;
+            text-align: center;
+        }
+        figure {
+            display: inline-block;
+            text-align: center;
+            margin: auto;
+            width: 30%;
+            padding-left: none;
+            padding-right: none;
+            
+        }
+
+        .event {
+            text-align: center;
+        }
+        .btn {
+  background-color: #343232;
+  border: none; 
+  color: white; 
+  padding: 24px 16px; 
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 4px;
+  line-height: 25px;
+  
+        }
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: gray;
+}
+        
+        .banner {
+            position:relative; 
+            width: 100%;
+            height: auto;
+        }    
+
+        
+/*responsyność menu bara do poprawy */
+@media screen and (max-width: 800px) {
+  .topnav a, .topnav-right {
+    float: none;
+    display: block;
+  }
+
+  .topnav-centered a {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+}      
+
+    </style>
+    
+    </head>
+<body>
+<div class="topnav">
+  <div class="topnav-centered">
+    <a href="index.html" class="logo"><img height="150px"src="img/logo.webp"></a>
+  </div>
+
+
+  <a href="about.html">O NAS</a>
+  <a href="#date">TERMIN</a>
+  <a href="#reg">REGULAMIN</a>
+
+
+  <div class="topnav-right">
+    <a href="#winners">ZWYCIĘZCY</a>
+    <a href="#signup" class="active">ZAPISZ SIĘ!</a>
+    <button type="button" class="btn" name="dark_light" onclick="toggleLight()" title="Toggle dark/light mode"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></button>
+  </div>
+ 
+</div>
+    <div class="banner">
+  <img src="img/baner.webp" alt="banner">
+ 
+</div>
+     
+        <div class="hr">
+    <hr>
+            <h2>JURY</h2>
+    <hr>
+    </div>
+    <div class="photo_round">
+        
+
+    <figure>
+        <img src="img/XzA0MTA0MzYuanBn.jpg">
+        <figcaption>Joanna Iks-De</figcaption>
+    </figure>
+
+    <figure>
+        <img src="img/XzAxMTY2ODkuanBn.jpg">
+        <figcaption>Barbara Nowak</figcaption>
+    </figure>
+    
+    <figure>
+        <img src="img/XzAxMzM5MTYuanBn.jpg">
+        <figcaption>Tadeusz Kowalski</figcaption>
+    </figure>
+    </div>
+    
+    <br><br>
+    <div class="hr"><hr><h2><a name="date">TERMIN</a></h2><hr></div>
+    <h2>Tegoroczna edycja odbędzie się</h2>
+    <h1>26 czerwca 2020</h1>
+    <div class="event">
+    <div title="Add to Calendar" class="addeventatc">
+    Dodaj do kalendarza
+    <span class="start">06/26/2020 08:00 AM</span>
+    <span class="end">06/26/2020 05:00 PM</span>
+    <span class="timezone">Europe/Warsaw</span>
+    <span class="title">DANCE@HOME Solo Cup</span>
+    <span class="description">Festiwal taneczny online dla solistów</span>
+    <span class="location">Internet!</span>
+</div>
+</div>
+    <div class="hr">
+    <hr><h2><a name="reg">REGULAMIN</a></h2><hr>
+        <p>//Tu będzie jakiś regulamin//</p>
+    </div>
+    
+    </body>
+</html>
