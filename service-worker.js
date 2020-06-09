@@ -1,10 +1,12 @@
-const CACHE_NAME = 'danceathome-1.0';
+const CACHE_NAME = 'danceathome-1.0.1';
 
 // List of files which are store in cache.
 let filesToCache = [
     '/',
     '/img/logo.webp',
-    '/index.html'
+    '/index.html',
+    '/about.html',
+    '/img/baner.webp'
 ];
 
 self.addEventListener('install', function (evt) {
